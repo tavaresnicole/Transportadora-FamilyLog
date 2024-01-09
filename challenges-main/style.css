@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #008dff;
+    padding: 10px 20px;
+}
+
+header {
+    height: 70px;
+    display: flex;
+}
+
+.logo {
+    height: 100%;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.text button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 0;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.text button:hover {
+    background-color: whitesmoke;
+}
+
+.family {
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+
+    align-items: center;
+
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
+    margin-bottom: 50px;
+}
+
+.family img {
+    height: 380px;
+}
+
+.family p {
+    width: 60%;
+}
+
+.veiculos {
+    text-align: center;
+    height: 91vh;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
+    margin-bottom: 50px;
+}
+
+.local {
+    text-align: center;
+    height: 40vh;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
+    margin-bottom: 50px;
+}
+
+.local .cidades {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 20px;
+}
+
+.cotacao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 91vh;
+}
+
+.cotacao form {
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.cotacao option {
+    color: black;
+}
+
+.cotacao select {
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+}
+
+.cotacao input {
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    width: 100px;
+}
+
+.cotacao button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 0;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.orcamento {
+    font-size: 50px;
+    margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    .family {
+        max-height: 100%;
+    }
+
+    .family img {
+        height: 300px;
+    }
+}
+
