@@ -46,6 +46,10 @@ mostraVeiculos();
 
 // some os valores e divida por 1,5 para obter o valor final e mostre na tela após 
 
+function scrollPage(x, y){
+    window.scrollBy(x, y)
+}
+
 function cotacaoFrete() {
     const prazo = document.querySelector('select');
     const valorPrazo = Number(prazo.options[prazo.selectedIndex].value);

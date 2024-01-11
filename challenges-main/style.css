@@ -101,7 +101,7 @@ a {
 
 .veiculos {
     text-align: center;
-    height: 91vh;
+    height: 41vh;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
     margin-bottom: 50px;
 }
@@ -120,6 +120,11 @@ a {
     flex-wrap: wrap;
     column-gap: 100px;
     row-gap: 20px;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 10px;
 }
 
 .cotacao {
