@@ -5,6 +5,7 @@ async function mostraCidades() {
             const lista = document.querySelector('.cidades');
             data.forEach(cidade => {
                 const item = document.createElement('li');
+                item.className = 'listaCidades';
                 item.textContent = cidade;
                 lista.appendChild(item);
             });
@@ -71,3 +72,30 @@ function cotacaoFrete() {
 
     document.querySelector('.orcamento').innerHTML = `Seu frete fica por apenas R$${valor.toFixed(2)}!`
 } 
+
+//após arrumar tudo o que ficou faltando...
+
+//logo abaixo temos um endpoint que retorna uma lista de usuários, 
+
+//mostre o nome dos usuarios e alguns dados como: nome, email, site.
+
+function mostraFuncionarios(){
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(resposta => resposta.json())
+    .then(dados => {
+        const li = document.querySelector('.funcionarios');
+        dados.forEach(funcionario => {
+           const lista = document.createElement('li');
+           lista.className = 'listaFuncionarios';
+           lista.innerHTML = `Nome: ${funcionario.name}, E-mail: ${funcionario.email} e Site: ${funcionario.website}`
+           li.appendChild(lista);
+        })
+    })
+}
+mostraFuncionarios()
+
+//use fetch para consumir os dados e, após consumir, mostre na tela na parte de funcionários.
+
+
+//https://jsonplaceholder.typicode.com/users
+
