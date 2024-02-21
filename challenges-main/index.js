@@ -66,5 +66,5 @@ function mostraFuncionarios(){
         })
     })
 }
-mostraFuncionarios();
+mostraFuncionarios()
 
