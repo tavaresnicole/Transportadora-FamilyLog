@@ -11,11 +11,7 @@ async function mostraCidades() {
             });
         });
 }
-
 mostraCidades();
-
-
-//mostre os veiculos da transportadora na tela
 
 async function mostraVeiculos() {
     fetch('./data/veiculos.json')
@@ -30,22 +26,6 @@ async function mostraVeiculos() {
         })
 }
 mostraVeiculos();
-
-// orce o frete de acordo com o peso e o prazo de entrega
-//a tabela de valores está abaixo
-
-// peso:
-// até 100kg - R$ 100,00
-// até 50kg - R$ 55,00
-// até 5kg - R$ 30,00
-
-// prazo:
-// no mesmo dia - R$ 100,00
-// em até 3 dias - R$ 55,00
-// em até 7 dias - R$ 30,00
-// em até 1 mes - R$ 10,00
-
-// some os valores e divida por 1,5 para obter o valor final e mostre na tela após 
 
 function scrollPage(x, y){
     window.scrollBy(x, y)
@@ -73,12 +53,6 @@ function cotacaoFrete() {
     document.querySelector('.orcamento').innerHTML = `Seu frete fica por apenas R$${valor.toFixed(2)}!`
 } 
 
-//após arrumar tudo o que ficou faltando...
-
-//logo abaixo temos um endpoint que retorna uma lista de usuários, 
-
-//mostre o nome dos usuarios e alguns dados como: nome, email, site.
-
 function mostraFuncionarios(){
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(resposta => resposta.json())
@@ -92,10 +66,5 @@ function mostraFuncionarios(){
         })
     })
 }
-mostraFuncionarios()
-
-//use fetch para consumir os dados e, após consumir, mostre na tela na parte de funcionários.
-
-
-//https://jsonplaceholder.typicode.com/users
+mostraFuncionarios();
 
