@@ -1,18 +1,25 @@
-Bem-vindo ao projeto FamilyLog, uma aplicação fictícia desenvolvida com fins de estudo. Este projeto utiliza HTML, CSS e JavaScript puro para criar uma página institucional básica com a funcionalidade de calcular o frete com base em alguns dados.
+<h1>Transportadora FamilyLog</h1>
+<p>Bem-vindo ao projeto FamilyLog, uma aplicação fictícia desenvolvida com fins de estudo. Este projeto utiliza HTML, CSS e JavaScript puro para criar uma página institucional básica com a funcionalidade de calcular o frete com base em alguns dados.</p> 
 
-Funcionalidades
-1. Cálculo de Frete
+
+<b>Funcionalidades</b> 
+
+<p>
+Cálculo de Frete: <br>
 Os usuários podem utilizar a funcionalidade de cálculo de frete para obter uma estimativa do custo de transporte de suas mercadorias. Preencha os campos necessários e clique em "Orçar" para receber instantaneamente uma cotação personalizada.
+</p>
 
-Como Utilizar
+<b>Como Utilizar</b>
 1. Clonando o Repositório
 Clone este repositório em sua máquina local usando o seguinte comando:
+```cmd
 git clone https://github.com/seu-usuario/transportadora-expressa.git
-
-3. Acessando o Projeto
+```
+2. Acessando o Projeto
 Navegue até o diretório do projeto:
-cd challanges-main
-
+```cmd
+cd Transportadora-FamilyLog
+```
 3. Abrindo a Aplicação
 Abra o arquivo index.html em seu navegador preferido para visualizar a página institucional e começar a utilizar a funcionalidade de cálculo de frete.
 
